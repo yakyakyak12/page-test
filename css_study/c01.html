@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a[target] {
+        color: red;
+      }
+
+      div[class*="my"] {
+        background-color: yellow;
+      }
+
+      .red {
+        color: red;
+      }
+
+      #title > .red {
+        color: green;
+      }
+
+      #title .blue {
+        color: blue;
+      }
+
+      p::before {
+        content: "나는";
+      }
+
+      p::after {
+        content: "입니다.";
+      }
+
+      .hover-click:hover {
+        background-color: rgb(228, 10, 10);
+      }
+      .hover-click:active {
+        background-color: rgb(247, 10, 10);
+      }
+      .test {
+        color: rgba(100, 100, 100, 1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>태그 속성 선택자</h1>
+    <a href="#">이동</a>
+    <a href="#" target="_blank">새 창으로 이동</a>
+    <hr />
+    <h1>문자열 속성 선택자</h1>
+    <div class="my">my</div>
+    <div class="my div">my-div</div>
+    <hr />
+    <h1>자식 선택자</h1>
+    <div id="title">
+      <div class="red">자식1</div>
+      <div class="blue">자식2</div>
+      <div>자식3</div>
+      <div>
+        자식4
+        <div class="blue">손자</div>
+      </div>
+    </div>
+    <div class="red">외부</div>
+    <hr />
+    <h1>가상 요소 선택자</h1>
+    <p>홍길동</p>
+    <hr />
+    <div class="hover-click">마우스를 올리거나 눌러주세요</div>
+    <hr />
+
+    <div style="color: red">
+      <p>상속된 스타일</p>
+    </div>
+  </body>
+</html>

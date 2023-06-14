@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .my {
+        display: block;
+        width: 200px;
+        height: 200px;
+      }
+
+      .s1 {
+        background-color: red;
+        position: relative;
+        top: 200px;
+        left: 100px;
+      }
+
+      .s2 {
+        background-color: green;
+        position: relative;
+        top: 100px;
+        left: 100px;
+        z-index: -1;
+      }
+
+      .s3 {
+        background-color: blue;
+        position: relative;
+        z-index: -2;
+        left: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <span class="my s1"> </span>
+    <span class="my s2"> </span>
+    <span class="my s3"> </span>
+  </body>
+</html>
